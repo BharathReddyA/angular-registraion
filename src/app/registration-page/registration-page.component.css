@@ -1,0 +1,23 @@
+.main{
+  background-color: #1e1e1e;
+}
+.btn-custom {
+  background-color: #002c21;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.btn-custom:hover {
+  box-shadow: 0px 10px 10px 0px #002c21;
+  transition: box-shadow 0.5s;
+  /* animation-delay: 0.1s; */
+  /* background-position-y: 10%; */
+}
+
+.entry {
+  background-color: #32b393;
+  /* background-color: #0aac83; */
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0pc 5px 5px 0px #32b393;
+}
