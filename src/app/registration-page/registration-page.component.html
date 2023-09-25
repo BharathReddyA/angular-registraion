@@ -3,48 +3,48 @@
     <div class="row">
       <div class="col-lg-3"></div>
       <div class="col-lg-6 entry">
-        <form action="" class="p-5">
+        <form (ngSubmit)="onSubmit()" [formGroup]="registrationForm" class="p-5">
           <div class="form-group py-2">
             <label for="first-name">First name:</label>
-            <input type="first-name" class="form-control" id="first-name" />
+            <input type="first-name" class="form-control" id="first-name" formControlName="firstName"/>
           </div>
           <div class="form-group py-2">
             <label for="last-name">Last name:</label>
-            <input type="last-name" class="form-control" id="last-name" />
+            <input type="last-name" class="form-control" id="last-name" formControlName="lastName"/>
           </div>
           <div class="form-group py-2">
             <label for="phone-number">Phone number:</label>
-            <input type="phone-number" class="form-control" id="phone-number" />
+            <input type="phone-number" class="form-control" id="phone-number" formControlName="phoneNumber"/>
           </div>
           <div class="form-group py-2">
             <label for="gender">Gender:</label>
             <br />
             <label class="pt-2"
-              ><input type="checkbox" id="gender" class="gender" /> Male</label
+              ><input type="checkbox" id="gender" class="gender" formControlName="gender"/> Male</label
             >
             <label class="px-2 pt-2"
-              ><input type="checkbox" id="gender" class="gender" />
+              ><input type="checkbox" id="gender" class="gender" formControlName="gender"/>
               Female</label
             >
             <label class="px-2 pt-2"
-              ><input type="checkbox" id="gender" class="gender" /> Other</label
+              ><input type="checkbox" id="gender" class="gender" formControlName="gender"/> Other</label
             >
           </div>
           <div class="form-group py-2">
             <label for="dob">Date of birth:</label>
-            <input type="dob" class="form-control" id="dob" />
+            <input type="dob" class="form-control" id="dob" formControlName="dob"/>
           </div>
           <div class="form-group py-2">
             <label for="address">Address:</label>
-            <input type="address" class="form-control" id="address" />
+            <input type="address" class="form-control" id="address" formControlName="address"/>
           </div>
           <div class="form-group py-2">
             <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" />
+            <input type="email" class="form-control" id="email" formControlName="email"/>
           </div>
           <div class="form-group py-2">
             <label for="pwd">Password:</label>
-            <input type="password" class="form-control" id="pwd" />
+            <input type="password" class="form-control" id="pwd" formControlName="pwd"/>
           </div>
           <button type="submit" class="btn btn-custom mt-3">Submit</button>
         </form>
